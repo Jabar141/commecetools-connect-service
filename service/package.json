@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "@commercetools/platform-sdk": "^7.9.0",
+    "lodash":"4.17.21"
   }
 }
