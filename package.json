@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/app.js",
-  "type": "module",
   "scripts": {
     "test": "node app",
     "start": "node src/app.js"
