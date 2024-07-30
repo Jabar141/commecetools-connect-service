@@ -1,5 +1,4 @@
-import { reviewProductChanges } from "./filterProductChanges";
-
+const {reviewProductChanges} = require('./filterProductChanges');
 const express = require('express');
 const app = express();
 const port = 8080;
