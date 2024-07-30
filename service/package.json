@@ -2,17 +2,19 @@
   "name": "custom-app",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.mjs",
-  "type": "module",
+  "main": "src/app.js",
+ 
   "scripts": {
     "test": "node app",
-    "start": "node src/app.mjs"
+    "start": "node src/app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
     "@commercetools/platform-sdk": "^7.9.0",
-    "lodash":"4.17.21"
+    "lodash":"4.17.21",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1"
   }
 }
