@@ -2,11 +2,11 @@
   "name": "custom-app",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "src/app.mjs",
   "type": "module",
   "scripts": {
     "test": "node app",
-    "start": "node src/app.js"
+    "start": "node src/app.mjs"
   },
   "author": "",
   "license": "ISC",
