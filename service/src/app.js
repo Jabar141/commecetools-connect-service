@@ -5,7 +5,7 @@ const { introspectToken } = require('./introspect');
 
 
 const app = express();
-const port = 8081;
+const port = 8080;
 
 app.use(express.json())
 app.get('/', (req, res) => {
