@@ -8,8 +8,10 @@ const app = express();
 const port = 8080;
 
 app.use(express.json())
-app.get('/', (req, res) => {
- var cart = req.body.resource.obj;
+
+
+app.get('/', (req, res) => = (req, res) => {
+  var cart = req.body.resource.obj;
   var itemsTotal = cart.lineItems.reduce((acc, curr) => {
     return acc + curr.quantity;
   }, 0);
@@ -26,7 +28,8 @@ app.get('/', (req, res) => {
       ],
     });
   }
-});
+};
+
 
 
 app.post('/products/:id', async (req, res) => {
