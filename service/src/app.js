@@ -10,7 +10,13 @@ const port = 8080;
 app.use(express.json())
 
 
-app.get('/', (req, res) => = (req, res) => {
+app.use(express.json())
+app.get('/', (req, res) => {
+  res.send(this.validateMaximumOfTenItems(req,res));
+});
+
+
+exports.validateMaximumOfTenItems = (req, res) => {
   var cart = req.body.resource.obj;
   var itemsTotal = cart.lineItems.reduce((acc, curr) => {
     return acc + curr.quantity;
