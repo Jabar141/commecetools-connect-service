@@ -9,7 +9,7 @@ const port = 8080;
 
 app.use(express.json())
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('Hello World!  Commercetools Training Day 3 OCT 23');
 });
 
 
