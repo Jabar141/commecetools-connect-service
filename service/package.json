@@ -6,13 +6,8 @@
   "private": true,
   "scripts": {
     "start": "node src/index.js",
-    "gcp-build": "tsc",
-    "start:dev": "concurrently -k \"tsc --watch\" \"nodemon -q build/index.js\"",
-    "build": "rimraf ./build && tsc",
-    "lint": "eslint . --ext .ts",
-    "prettier": "prettier --write '**/*.{js,ts}'",
-    "test": "jest --config jest.config.cjs",
-    "test:watch": "jest --watch"
+    "connector:post-deploy": "node build/connector/post-deploy.js",
+    "connector:pre-undeploy": "node build/connector/pre-undeploy.js"
   },
   "author": "",
   "license": "MIT",
