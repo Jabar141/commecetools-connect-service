@@ -1,5 +1,5 @@
 deployAs:
-  - name: modelcontextprotocol
+  - name: service
     applicationType: service
     endpoint: /mcp
     configuration:
