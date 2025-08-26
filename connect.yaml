@@ -9,28 +9,23 @@ deployAs:
           default: "client_credentials"
         - key: AUTH_URL
           description: commercetools Composable Commerce Auth url
-          default: "https://auth.europe-west1.gcp.commercetools.com"
           required: true
         - key: API_URL
           description: commercetools Composable Commerce API url
-          default: "https://api.europe-west1.gcp.commercetools.com"
           required: true
         - key: TOOLS
           description: comma separate tools (refer to list of available tools in the documentation https://docs.commercetools.com/sdk/commerce-mcp/essentials-mcp#individual-tools)
           default: "all"
         - key: IS_ADMIN
           description: MCP server have previlege to create and edit resources, please review use case before setting to true
-          default: "true"
+          default: "false"
       securedConfiguration:
         - key: PROJECT_KEY
           description: commercetools Composable Commerce project key
-          default: "ai-garage-1"
           required: true
         - key: CLIENT_ID
           description: commercetools Composable Commerce client ID
-          default: "7SadQ4aJOgaXP6-m10UsG5jm"
           required: true
         - key: CLIENT_SECRET
           description: commercetools Composable Commerce client secret
-          default: "dXR0jnTMtGyvWWo0TnWHrXiQ2k5Te6k4"
           required: true
