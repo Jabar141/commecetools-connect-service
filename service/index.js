@@ -245,7 +245,7 @@ console.log("Prompts configuration:", JSON.stringify({
 }, null, 2));
 
 // Set port with fallback to 8080
-const PORT = process.env.PORT || 8085;
+const PORT = process.env.PORT || 8080;
 serverStreamable.listen(PORT, () => {
   logger.info(`⚡️ MCP server listening on port ${PORT}`);
 });
