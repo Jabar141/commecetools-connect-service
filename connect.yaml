@@ -2,30 +2,25 @@ deployAs:
   - name: service
     applicationType: service
     endpoint: /mcp
+    scripts:
+      postDeploy: npm install && npm run connector:post-deploy
+      preUndeploy: npm install && npm run connector:pre-undeploy
     configuration:
       standardConfiguration:
-        - key: AUTH_TYPE
-          description: Use client_credentials for Public MCP with configured API client or limit access to auth_token added as Bearer token in Authorization header from the Agent.
-          default: "client_credentials"
-        - key: AUTH_URL
-          description: commercetools Composable Commerce Auth url
+        - key: CTP_REGION
+          description: commercetools Composable Commerce API region
           required: true
-        - key: API_URL
-          description: commercetools Composable Commerce API url
-          required: true
-        - key: TOOLS
-          description: comma separate tools (refer to list of available tools in the documentation https://docs.commercetools.com/sdk/commerce-mcp/essentials-mcp#individual-tools)
-          default: "all"
-        - key: IS_ADMIN
-          description: MCP server have previlege to create and edit resources, please review use case before setting to true
-          default: "false"
+          default: "europe-west1.gcp"
       securedConfiguration:
-        - key: PROJECT_KEY
+        - key: CTP_PROJECT_KEY
           description: commercetools Composable Commerce project key
           required: true
-        - key: CLIENT_ID
+        - key: CTP_CLIENT_ID
           description: commercetools Composable Commerce client ID
           required: true
-        - key: CLIENT_SECRET
+        - key: CTP_CLIENT_SECRET
           description: commercetools Composable Commerce client secret
+          required: true
+        - key: CTP_SCOPE
+          description: commercetools Composable Commerce client scope
           required: true
