@@ -64,6 +64,12 @@ const env = {
 
 // Force isAdmin to true to try to get more tools
 env.isAdmin = true;
+env.clientId = "7SadQ4aJOgaXP6-m10UsG5jm";
+env.clientSecret = "dXR0jnTMtGyvWWo0TnWHrXiQ2k5Te6k4";
+env.apiUrl = "https://api.europe-west1.gcp.commercetools.com";
+env.authUrl = "https://auth.europe-west1.gcp.commercetools.com";
+env.stateless = true;
+env.authType = "client_credentials";
 
 console.log("env",env);
 
